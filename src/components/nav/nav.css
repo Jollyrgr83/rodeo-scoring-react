@@ -1,0 +1,39 @@
+/* NAV COMPONENT STYLESHEET */
+.nav-container {
+  background-color: rgba(39, 89, 55, 15%);
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  margin: 25px;
+  padding: 25px;
+  width: 375px;
+  max-width: 90%;
+}
+
+.nav-button {
+  background-color: rgb(39, 89, 55);
+  color: white;
+  box-shadow: 1px 1px 3px black;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 15px 0 15px 0;
+  padding: 10px;
+  width: 90%;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 6px 6px 6px black;
+}
+
+.nav-button:active {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 0 black;
+}
+
+.nav-button:focus {
+  cursor: pointer;
+  outline: none;
+}

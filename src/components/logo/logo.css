@@ -1,0 +1,10 @@
+/* Logo Component stylesheet */
+.logo-container {
+  width: 300px;
+  max-width: 90%;
+}
+.logo {
+  width: 100px;
+  max-width: 90%;
+  margin: 5px;
+}

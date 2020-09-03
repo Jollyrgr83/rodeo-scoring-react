@@ -1,0 +1,14 @@
+/* TITLE COMPONENT STYLESHEET */
+.title {
+  background-color: #275937;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  padding: 5px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 300;
+  width: 375px;
+  max-width: 90%;
+  margin: 15px;
+}
