@@ -12,8 +12,11 @@ function App() {
   const [page, setPage] = useState({ page: "home", title: UTIL.titleRef["home"] });
   
   function selectPage(event) {
+    console.log(event.target.id);
     setPage({ page: event.target.id, title: UTIL.titleRef[event.target.id] });
   }
+  console.log("page", page.page);
+  console.log("title", page.title);
   return (
     <div className="background">
       <Header title={page.title} />

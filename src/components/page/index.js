@@ -2,13 +2,13 @@
 // react
 import React from "react";
 // page components
-import View from "../../pages/comp";
+import View from "../../pages/view";
 import Year from "../../pages/year";
 import Comp from "../../pages/comp";
 import Score from "../../pages/score";
 import Report from "../../pages/report";
 
-function Page( {activePage }) {
+function Page( { activePage }) {
   switch (activePage) {
     case "home":
       return null;
