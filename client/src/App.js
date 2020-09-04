@@ -15,10 +15,9 @@ function App() {
     console.log(event.target.id);
     setPage({ page: event.target.id, title: UTIL.titleRef[event.target.id] });
   }
-  console.log("page", page.page);
-  console.log("title", page.title);
+
   return (
-    <div className="background">
+    <div className="background mx-auto">
       <Header title={page.title} />
       <Page activePage={page.page} />
       <Nav navClick={selectPage} />

@@ -1,9 +1,9 @@
 /* NAV COMPONENT STYLESHEET */
 .nav-container {
-  background-color: rgba(39, 89, 55, 15%);
+  background-color: rgba(39, 89, 55, 5%);
   border-radius: 5px;
   box-shadow: 1px 1px 3px black;
-  margin: 25px;
+  margin: 15px;
   padding: 25px;
   width: 375px;
   max-width: 90%;
