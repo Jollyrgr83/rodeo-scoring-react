@@ -9,12 +9,18 @@ function Nav({ navClick }) {
   return (
     <div>
       <div className="nav-container mx-auto text-center">
-        <button className="nav-button mx-auto" id="home" onClick={navClick}>Home</button>
-        <button className="nav-button mx-auto" id="view" onClick={navClick}>View/Edit</button>
-        <button className="nav-button mx-auto" id="year" onClick={navClick}>Year Setup</button>
-        <button className="nav-button mx-auto" id="comp" onClick={navClick}>Competitors</button>
-        <button className="nav-button mx-auto" id="score" onClick={navClick}>Scores</button>
-        <button className="nav-button mx-auto" id="report" onClick={navClick}>Reports</button>
+        <div className="row text-center mx-auto">
+          <button className="nav-button green mx-auto" id="home" onClick={navClick}>Home</button>
+          <button className="nav-button green mx-auto" id="view" onClick={navClick}>View / Edit</button>
+        </div>
+        <div className="row text-center mx-auto">
+          <button className="nav-button green mx-auto" id="year" onClick={navClick}>Year Setup</button>
+          <button className="nav-button green mx-auto" id="comp" onClick={navClick}>Competitors</button>
+        </div>
+        <div className="row text-center mx-auto">
+          <button className="nav-button green mx-auto" id="score" onClick={navClick}>Scores</button>
+          <button className="nav-button green mx-auto" id="report" onClick={navClick}>Reports</button>
+        </div>
       </div>
     </div>
   );

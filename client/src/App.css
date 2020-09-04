@@ -1,13 +1,21 @@
 /* APP STYLESHEET */
+body {
+  background-color: #9bb4a5;
+}
 .background {
-  background-color: rgba(39, 89, 55, 45%);
   margin: 0;
   padding: 10px;
-  width: 100vw;
-  height: 100vh;
+  width: 375px;
+  max-width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.main-line {
+  width: 375px;
+  max-width: 90%;
+  border-top: solid 1px #275937;
 }
 .main-container {
-  background-color: rgba(39, 89, 55, 5%);
+  background-color: #9bb4a5;
   border-radius: 5px;
   box-shadow: 1px 1px 3px black;
   margin: 15px;
@@ -15,26 +23,26 @@
   width: 375px;
   max-width: 90%;
 }
-.main-button {
+.container-button {
   box-shadow: 1px 1px 3px black;
   outline: none;
   border: none;
   border-radius: 40px;
   margin: 15px 0 15px 0;
   padding: 10px;
-  width: 90%;
+  width: 40%;
 }
-.main-button:hover {
+.container-button:hover {
   cursor: pointer;
   outline: none;
   box-shadow: 6px 6px 6px black;
 }
-.main-button:active {
+.container-button:active {
   cursor: pointer;
   outline: none;
   box-shadow: 0 0 0 black;
 }
-.main-button:focus {
+.container-button:focus {
   cursor: pointer;
   outline: none;
 }
@@ -43,40 +51,171 @@
   color: white;
   border-radius: 5px;
   box-shadow: 1px 1px 3px black;
-  padding: 5px;
+  padding: 5px 0 5px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 300;
   width: 90%;
   margin: 5px;
 }
 .container-text {
   color: #275937;
-  font-size: 16px;
+  font-size: 0.9em;
   padding: 5px;
-  margin: 0px 0 15px 0;
+  margin: 0 0 5px 0;
   width: 90%;
   text-align: center;
 }
-.container-select,
-.container-select:enabled,
-.container-select:active,
-.container-select:focus {
+.container-subtitle {
+  color: #275937;
+  padding: 5px;
+  margin: 0 0 5px 0;
+  font-size: 1.2em;
+  width: 90%;
+  text-align: center;
+}
+.container-line {
+  width: 75%;
+  border-top: solid 1px #275937;
+  margin: 5px 0 15px 0;
+}
+.container-warning {
+  background-color: #c00000;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px black;
+  padding: 5px;
+  width: 90%;
+  margin: 0 0 5px 0;
+}
+.warning-title {
+  font-size: 1em;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.warning-text {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+.full-select,
+.full-select:active,
+.full-select:enabled,
+.full-select:focus {
   background-color: white;
   color: #275937;
   padding: 5px;
   width: 90%;
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   border-radius: 5px;
   outline: none;
   border: none;
   box-shadow: 1px 1px 3px black;
+}
+.large-select,
+.large-select:active,
+.large-select:enabled,
+.large-select:focus {
+  background-color: white;
+  color: #275937;
+  padding: 5px;
+  width: 79%;
+  margin: 0 5px 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+}
+.full-input,
+.full-input:active,
+.full-input:enabled,
+.full-input:focus {
+  background-color: white;
+  color: #275937;
+  padding: 5px;
+  width: 90%;
+  margin: 0 0 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+}
+.half-input,
+.half-input:active,
+.half-input:enabled,
+.half-input:focus {
+  background-color: white;
+  color: #275937;
+  padding: 5px;
+  width: 60%;
+  margin: 0 5px 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+  height: 3em;
+}
+.large-input,
+.large-input:active,
+.large-input:enabled,
+.large-input:focus {
+  background-color: white;
+  color: #275937;
+  padding: 5px;
+  width: 79%;
+  margin: 0 5px 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+  height: 3em;
+}
+.container-row {
+  width: 90%;
+  margin: 5px 0 5px 0;
+  padding: 5px 0 5px 0;
+}
+.square-button {
+  box-shadow: 1px 1px black;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 0 0 5px 5px;
+  padding: 7px;
+  font-size: 1.5em;
+  width: 2em;
+  height: 2em;
+  text-align: center;
+}
+.square-button:hover {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 6px 6px 6px black;
+}
+.square-button:active {
+  cursor: pointer;
+  outline: none;
+  box-shadow: 0 0 0 black;
+}
+.square-button:focus {
+  cursor: pointer;
+  outline: none;
 }
 .blue {
   background-color: rgb(0, 75, 155);
   color: white;
 }
 .red {
-  background-color: rgb(192, 0, 0);
+  background-color: #c00000;
+  color: white;
+}
+.clear {
+  background-color: #9bb4a5;
+  color: #275937;
+}
+.green {
+  background-color: #275937;
   color: white;
 }

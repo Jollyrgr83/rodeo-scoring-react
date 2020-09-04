@@ -7,7 +7,10 @@ import "./title.css";
 
 function Title( { title }) {
   return (
-    <div className="title mx-auto">{title}</div>
+    <div className="mx-auto">
+      <h1 className="title mx-auto">{title}</h1>
+      <hr className="main-line mx-auto"></hr>
+    </div>
   );
 }
 
