@@ -172,6 +172,29 @@ body {
   box-shadow: 1px 1px 3px black;
   height: 3em;
 }
+.small-input,
+.small-input:active,
+.small-input:enabled,
+.small-input:focus {
+  background-color: white;
+  color: #275937;
+  padding: 5px;
+  width: 25%;
+  margin: 0 5px 5px 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 1px 3px black;
+  height: 2.5em;
+}
+.small-text {
+  color: #275937;
+  font-size: 0.9em;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+  width: 25%;
+  text-align: center;
+}
 .container-row {
   width: 90%;
   margin: 5px 0 5px 0;

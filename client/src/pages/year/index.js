@@ -56,6 +56,20 @@ function Year() {
           <button className="container-button red">Delete Tier</button>
         </div>
       </div>
+
+      <div className="main-container mx-auto">
+        <p className="container-subtitle mx-auto">Add a Competition Tier</p>
+        <hr className="container-line mx-auto"></hr>
+        <div className="row text-left mx-auto container-row">
+          <select className="large-select mx-auto" id="view-category-select">
+            <option>test</option>
+          </select>
+          <div className="square-button blue">
+            <FontAwesomeIcon icon={faPlus} />
+          </div>
+        </div>
+      </div>
+
     </div>
   );
 }

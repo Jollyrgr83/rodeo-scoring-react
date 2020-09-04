@@ -22,7 +22,7 @@ function View() {
           </select>
         </div>
         <div className="text-center">
-          <button className="container-button green">Show Items</button>
+          <button className="container-button blue">Show Items</button>
         </div>
         {/* <div className="container-warning mx-auto">
           <p className="warning-title">WARNING!</p>
@@ -55,7 +55,7 @@ function View() {
           <input className="full-input mx-auto" type="text" />
         </div>
         <div className="text-center">
-          <button className="container-button green">Add Item</button>
+          <button className="container-button blue">Add Item</button>
         </div>
       </div>
 
