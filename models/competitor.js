@@ -9,9 +9,9 @@ const competitorSchema = new Schema({
   lastName: { type: String, required: false },
   teamName: { type: String, required: false },
   groupNames: { type: String, required: false },
-  organizationID: { type: String, required: true },
-  tierID: { type: String, required: true },
-  yearID: { type: String, required: true },
+  organizationID: { type: Schema.Types.ObjectId, ref: "Organization" },
+  tierID: { type: Schema.Types.ObjectId, ref: "Tier" },
+  yearID: { type: Schema.Types.ObjectId, ref: "Years" },
   competitorNumber: { type: String, required: true },
   modifiedDate: { type: Date, default: Date.now }
 });

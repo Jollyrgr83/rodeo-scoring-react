@@ -5,9 +5,9 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // create score schema
 const scoreSchema = new Schema({
-  yearID: { type: String, required: true },
-  competitorID: { type: String, required: true },
-  eventID: { type: String, required: true },
+  yearID: { type: Schema.Types.ObjectId, ref: "Years" },
+  competitorID: { type: Schema.Types.ObjectId, ref: "Competitor" },
+  eventID: { type: Schema.Types.ObjectId, ref: "Event" },
   score: { type: Number, required: false },
   timeMinutes: { type: Number, required: false },
   timeSeconds: { type: Number, requied: false },

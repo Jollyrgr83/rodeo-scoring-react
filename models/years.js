@@ -7,9 +7,9 @@ const Schema = mongoose.Schema;
 const yearsSchema = new Schema({
   value: { type: Number, required: false },
   type: { type: String, required: true },
-  tierID: { type: String, required: false },
-  eventID: { type: String, required: false },
-  yearID: { type: String, required: false },
+  tierID: { type: Schema.Types.ObjectId, ref: "Tier", required: false },
+  eventID: { type: Schema.Types.ObjectId, ref: "Event", required: false },
+  yearID: { type: Schema.Types.ObjectId, ref: "Years", required: false },
   modifiedDate: { type: Date, default: Date.now }
 });
 // configure schema as model
