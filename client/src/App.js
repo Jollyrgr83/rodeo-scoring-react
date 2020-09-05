@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-// stylesheet
+// stylesheets
 import "./App.css";
+import "./assets/css/button.css";
+import "./assets/css/color.css";
+import "./assets/css/size.css";
 // components
-import Header from "./components/header";
-import Page from "./components/page";
+import Logo from "./components/logo";
 import Nav from "./components/nav";
+import Title from "./components/title";
+import Page from "./components/page";
 // utilities
 import UTIL from "./util/util";
 
@@ -21,24 +25,10 @@ function App() {
 
   return (
     <div className="background mx-auto">
-      <Header title={page.title} />
-      {/* <div className="main-container mx-auto">
-        <div className="container-title mx-auto">View and Edit Items</div>
-        <p className="container-text mx-auto">Select a Category to View/Edit</p>
-        <div className="text-center">
-          <select
-            className="container-select mx-auto"
-            id="view-category-select"
-          >
-            <option>test</option>
-          </select>
-        </div>
-        <div className="text-center">
-          <button className="container-button green">Show Items</button>
-        </div>
-      </div> */}
-      <Page activePage={page.page} />
+      <Logo />
       <Nav navClick={selectPage} />
+      <Title title={page.title} />
+      <Page activePage={page.page} />
     </div>
   );
 }

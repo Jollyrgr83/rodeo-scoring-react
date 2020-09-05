@@ -2,12 +2,12 @@
 // react
 import React from "react";
 // page components
-import Home from "../../pages/home";
-import View from "../../pages/view";
-import Year from "../../pages/year";
-import Comp from "../../pages/comp";
-import Score from "../../pages/score";
-import Report from "../../pages/report";
+import Home from "../pages/home";
+import View from "../pages/view";
+import Year from "../pages/year";
+import Comp from "../pages/comp";
+import Score from "../pages/score";
+import Report from "../pages/report";
 
 function Page( { activePage }) {
   switch (activePage) {

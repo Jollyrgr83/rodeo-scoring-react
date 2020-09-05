@@ -9,12 +9,16 @@ body {
   max-width: 100%;
   font-family: "Montserrat", sans-serif;
 }
-.main-line {
-  width: 375px;
+.logo-container {
+  width: 300px;
   max-width: 90%;
-  border-top: solid 1px #275937;
 }
-.main-container {
+.logo {
+  width: 100px;
+  max-width: 90%;
+  margin: 5px;
+}
+.container {
   background-color: #9bb4a5;
   border-radius: 5px;
   box-shadow: 1px 1px 3px black;
@@ -23,42 +27,19 @@ body {
   width: 375px;
   max-width: 90%;
 }
-.container-button {
-  box-shadow: 1px 1px 3px black;
-  outline: none;
-  border: none;
-  border-radius: 40px;
-  margin: 15px 0 15px 0;
-  padding: 10px;
-  width: 40%;
-}
-.container-button:hover {
-  cursor: pointer;
-  outline: none;
-  box-shadow: 6px 6px 6px black;
-}
-.container-button:active {
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 0 0 black;
-}
-.container-button:focus {
-  cursor: pointer;
-  outline: none;
-}
-.container-title {
-  background-color: #275937;
-  color: white;
-  border-radius: 5px;
-  box-shadow: 1px 1px 3px black;
-  padding: 5px 0 5px 0;
+
+.title {
+  background-color: #9bb4a5;
+  color: #275937;
+  padding: 5px;
   text-align: center;
-  font-size: 1em;
-  font-weight: 300;
-  width: 90%;
-  margin: 5px;
+  font-size: 1.5em;
+  font-weight: 700;
+  width: 375px;
+  max-width: 90%;
+  margin: 15px 0 15px 0;
 }
-.container-text {
+.text {
   color: #275937;
   font-size: 0.9em;
   padding: 5px;
@@ -66,7 +47,7 @@ body {
   width: 90%;
   text-align: center;
 }
-.container-subtitle {
+.subtitle {
   color: #275937;
   padding: 5px;
   margin: 0 0 5px 0;
@@ -74,7 +55,7 @@ body {
   width: 90%;
   text-align: center;
 }
-.container-line {
+.line {
   width: 75%;
   border-top: solid 1px #275937;
   margin: 5px 0 15px 0;
@@ -100,99 +81,38 @@ body {
   margin: 5px;
   padding: 5px;
 }
-.full-select,
-.full-select:active,
-.full-select:enabled,
-.full-select:focus {
+select,
+select:active,
+select:enabled,
+select:focus {
   background-color: white;
   color: #275937;
   padding: 5px;
-  width: 90%;
-  margin: 0 0 5px 0;
+  margin: 5px 0 5px 0;
   border-radius: 5px;
   outline: none;
   border: none;
   box-shadow: 1px 1px 3px black;
 }
-.large-select,
-.large-select:active,
-.large-select:enabled,
-.large-select:focus {
+input,
+input:active,
+input:enabled,
+input:focus {
   background-color: white;
   color: #275937;
   padding: 5px;
-  width: 79%;
-  margin: 0 5px 5px 0;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  box-shadow: 1px 1px 3px black;
-}
-.full-input,
-.full-input:active,
-.full-input:enabled,
-.full-input:focus {
-  background-color: white;
-  color: #275937;
-  padding: 5px;
-  width: 90%;
-  margin: 0 0 5px 0;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  box-shadow: 1px 1px 3px black;
-}
-.half-input,
-.half-input:active,
-.half-input:enabled,
-.half-input:focus {
-  background-color: white;
-  color: #275937;
-  padding: 5px;
-  width: 60%;
-  margin: 0 5px 5px 0;
+  margin: 5px 0 5px 0;
   border-radius: 5px;
   outline: none;
   border: none;
   box-shadow: 1px 1px 3px black;
   height: 3em;
-}
-.large-input,
-.large-input:active,
-.large-input:enabled,
-.large-input:focus {
-  background-color: white;
-  color: #275937;
-  padding: 5px;
-  width: 79%;
-  margin: 0 5px 5px 0;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  box-shadow: 1px 1px 3px black;
-  height: 3em;
-}
-.small-input,
-.small-input:active,
-.small-input:enabled,
-.small-input:focus {
-  background-color: white;
-  color: #275937;
-  padding: 5px;
-  width: 25%;
-  margin: 0 5px 5px 0;
-  border-radius: 5px;
-  outline: none;
-  border: none;
-  box-shadow: 1px 1px 3px black;
-  height: 2.5em;
 }
 .small-text {
   color: #275937;
   font-size: 0.9em;
   padding: 5px;
   margin: 0 5px 5px 0;
-  width: 25%;
   text-align: center;
 }
 .container-row {
@@ -200,45 +120,5 @@ body {
   margin: 5px 0 5px 0;
   padding: 5px 0 5px 0;
 }
-.square-button {
-  box-shadow: 1px 1px black;
-  outline: none;
-  border: none;
-  border-radius: 5px;
-  margin: 0 0 5px 5px;
-  padding: 7px;
-  font-size: 1.5em;
-  width: 2em;
-  height: 2em;
-  text-align: center;
-}
-.square-button:hover {
-  cursor: pointer;
-  outline: none;
-  box-shadow: 6px 6px 6px black;
-}
-.square-button:active {
-  cursor: pointer;
-  outline: none;
-  box-shadow: 0 0 0 black;
-}
-.square-button:focus {
-  cursor: pointer;
-  outline: none;
-}
-.blue {
-  background-color: rgb(0, 75, 155);
-  color: white;
-}
-.red {
-  background-color: #c00000;
-  color: white;
-}
-.clear {
-  background-color: #9bb4a5;
-  color: #275937;
-}
-.green {
-  background-color: #275937;
-  color: white;
-}
+
+

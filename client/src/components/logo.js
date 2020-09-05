@@ -2,10 +2,8 @@
 
 // react
 import React from "react";
-// stylesheet
-import "./logo.css";
 // logo image
-import logo from "../../assets/images/logo.png";
+import logo from "../assets/images/logo.png";
 
 function Logo() {
   return (
