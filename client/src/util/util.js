@@ -4,7 +4,7 @@
 
 const UTIL = {
   titleRef: {
-    "home": "Annual Lineworkers Rodeo Scoring",
+    "home": "Rodeo Scoring",
     "view": "View / Edit Database",
     "year": "Year Setup",
     "comp": "Add / Edit Competitors",

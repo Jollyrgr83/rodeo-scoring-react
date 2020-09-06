@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // create tier schema
 const tierSchema = new Schema({
-  tierName: { type: String, required: true },
+  name: { type: String, required: true },
   teamBoolean: { type: Boolean, required: true },
   modifiedDate: { type: Date, default: Date.now }
 });

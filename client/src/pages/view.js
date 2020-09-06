@@ -1,12 +1,45 @@
 // VIEW PAGE COMPONENT
 // react
-import React from "react";
-// fontawesome
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// fontawesome icons
-import { faRedo, faTrashAlt } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
+// components
+import ViewItem from "../components/view-item";
+// utilities
+import API from "../util/API";
 
 function View() {
+  const [userInput, setUserInput] = useState({ viewCategorySelect: "tier" });
+  const [viewItems, setViewItems] = useState({
+    event: [],
+    organization: [],
+    tier: [],
+    year: [],
+  });
+
+  function updateViewItems() {
+    API.viewAPI(userInput.viewCategorySelect).then((data) => {
+      setViewItems({
+        event: [...data.data.event],
+        organization: [...data.data.organization],
+        tier: [...data.data.tier],
+        year: [...data.data.year],
+      });
+    });
+  }
+
+  function handleChange(event) {
+    const { id, value } = event.target;
+    setUserInput({ ...userInput, [id]: value });
+    // if (id === "viewCategorySelect") {
+    //   API.viewAPI(value).then((data) => setViewItems({ arr: [...data] }));
+    // }
+  }
+
+  function viewUpdate(event) {}
+
+  function viewDelete(event) {}
+
+  updateViewItems();
+
   return (
     <div>
       <div className="container mx-auto">
@@ -14,12 +47,17 @@ function View() {
         <hr className="line mx-auto"></hr>
         <p className="text mx-auto">Select a Category to View/Edit</p>
         <div className="text-center">
-          <select className="full mx-auto" id="view-category-select">
-            <option>test</option>
+          <select
+            className="full mx-auto"
+            id="viewCategorySelect"
+            onChange={handleChange}
+            value={userInput.viewCategorySelect}
+          >
+            <option value="tier">Tiers</option>
+            <option value="event">Events</option>
+            <option value="organization">Organizations</option>
+            <option value="year">Years</option>
           </select>
-        </div>
-        <div className="text-center">
-          <button className="button blue">Show Items</button>
         </div>
         {/* <div className="container-warning mx-auto">
           <p className="warning-title">WARNING!</p>
@@ -27,15 +65,17 @@ function View() {
         </div> */}
         <div className="subtitle mx-auto">Item Name</div>
         <hr className="line mx-auto"></hr>
-        <div className="row text-center mx-auto container-row">
-          <input className="half mx-auto" type="text" />
-          <div className="square-button text-center mx-auto blue">
-            <FontAwesomeIcon icon={faRedo} />
-          </div>
-          <div className="square-button text-center mx-auto red">
-            <FontAwesomeIcon icon={faTrashAlt} />
-          </div>
-        </div>
+        {viewItems[userInput.viewCategorySelect].map((x) => {
+          return (
+            <ViewItem
+              text={x.name}
+              handleChange={handleChange}
+              viewUpdate={viewUpdate}
+              viewDelete={viewDelete}
+              key={x._id}
+            />
+          );
+        })}
       </div>
 
       <div className="container mx-auto">
@@ -43,8 +83,15 @@ function View() {
         <hr className="line mx-auto"></hr>
         <p className="text mx-auto">Select an Item to Add</p>
         <div className="text-center">
-          <select className="full mx-auto" id="add-category-select">
-            <option>test</option>
+          <select
+            className="full mx-auto"
+            id="viewAddCategorySelect"
+            onChange={handleChange}
+          >
+            <option value="tier">Tiers</option>
+            <option value="event">Events</option>
+            <option value="organization">Organizations</option>
+            <option value="year">Years</option>
           </select>
         </div>
         <p className="text mx-auto">Enter Information</p>
@@ -55,7 +102,6 @@ function View() {
           <button className="button blue">Add Item</button>
         </div>
       </div>
-
     </div>
   );
 }

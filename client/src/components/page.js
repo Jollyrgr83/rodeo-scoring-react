@@ -9,7 +9,7 @@ import Comp from "../pages/comp";
 import Score from "../pages/score";
 import Report from "../pages/report";
 
-function Page( { activePage }) {
+function Page( { activePage, handleChange, selectOption }) {
   switch (activePage) {
     case "home":
       return (
@@ -17,7 +17,7 @@ function Page( { activePage }) {
       );
     case "view":
       return (
-        <View />
+        <View handleChange={handleChange} selectOption={selectOption} />
       );
     case "year":
       return (

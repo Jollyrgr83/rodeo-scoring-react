@@ -1,6 +1,6 @@
 const tierSeed = [
-  { tierName: "Apprentice" },
-  { tierName: "Journeyman" },
+  { name: "Apprentice", teamBoolean: false },
+  { name: "Journeyman", teamBoolean: true },
 ];
 
 module.exports = tierSeed;

@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // create organization schema
 const organizationSchema = new Schema({
-  organizationName: { type: String, required: true },
+  name: { type: String, required: true },
   coopBoolean: { type: Boolean, required: true },
   modifiedDate: { type: Date, default: Date.now }
 });

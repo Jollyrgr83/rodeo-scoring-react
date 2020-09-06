@@ -69,7 +69,7 @@ function Comp() {
         <div className="text-center mx-auto">
           <input className="full mx-auto" type="text" />
         </div>
-        <p className="container-text mx-auto">Select Organization</p>
+        <p className="text mx-auto">Select Organization</p>
         <div className="text-center mx-auto">
           <select className="full mx-auto">
             <option>test</option>

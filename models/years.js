@@ -5,7 +5,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 // create years schema
 const yearsSchema = new Schema({
-  value: { type: Number, required: false },
+  name: { type: Number, required: false },
   type: { type: String, required: true },
   tierID: { type: Schema.Types.ObjectId, ref: "Tier", required: false },
   eventID: { type: Schema.Types.ObjectId, ref: "Event", required: false },
